@@ -1,0 +1,58 @@
+body, button {
+    font-family: 'Rubik Mono One', sans-serif;
+    background-color: lightgray;
+}
+
+header {
+    background-color: black;
+    margin: -8px -8px -8px;
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+.form {
+    font-size: 20px;
+}
+
+button {
+    background-color: white;
+    font-size: 20px;
+    height: 40px;
+    width: 200px;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+}
+
+input[type="text"] {
+    font-family: 'Rubik Mono One', sans-serif;
+    text-align: center;
+}
+
+input[name="squad-number"] {
+    margin-left: 4.52%;
+}
+
+input[name="regiment-number"] {
+    margin-left: 5.64%;
+}
+
+input[name="army-number"] {
+    margin-left: 5.64%;
+}
+
+input[name="battle"] {
+    margin-left: 8.95%;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    text-align: center;
+}

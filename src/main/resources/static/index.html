@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <title>Великая армия</title>
+</head>
+<body>
+<header>
+    Великая армия Республики
+</header>
+<div class="form">
+    <form>
+        <p>Выберите необходимые данные информационной системы Великой армии республики:</p>
+        <div>
+            <label class="radio-block"><input type="radio" name="request" value="clones">клоны</label>
+            <label class="radio-block"><input type="radio" name="request" value="commanders">командиры</label>
+            <label class="radio-block"><input type="radio" name="request" value="colonels">полковники</label>
+            <label class="radio-block"><input type="radio" name="request" value="vehicles">боевая техника</label>
+            <label class="radio-block"><input type="radio" name="request" value="jedi">джедаи</label>
+            <label class="radio-block"><input type="radio" name="request" value="planets">планеты</label>
+            <label class="radio-block"><input type="radio" name="request" value="battles">битвы</label>
+            <label class="radio-block"><input type="radio" name="request" value="regiments">участники битв</label>
+        </div>
+        <br>
+        <div>
+            <label>номер отряда:</label>
+            <label><input type="text" size="24" maxlength="10" name="squad-number" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')"></label>
+        </div>
+        <div>
+            <label>номер полка:</label>
+            <label><input type="text" size="24" maxlength="10" name="regiment-number" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')"></label>
+        </div>
+        <div>
+            <label>номер армии:</label>
+            <label><input type="text" size="24" maxlength="10" name="army-number" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')"></label>
+        </div>
+        <div>
+            <label>звёздная система:</label>
+            <label><input type="text" size="24" name="system"></label>
+        </div>
+        <div>
+            <label>id битвы:</label>
+            <label><input type="text" size="24" maxlength="10" name="battle" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')"></label>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Получить</button>
+        </div>
+    </form>
+</div>
+<hr>
+<div class="table">
+    <table>
+    </table>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
